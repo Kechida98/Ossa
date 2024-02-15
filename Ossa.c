@@ -2,18 +2,16 @@
 
 int main()
 {
-    int num1, num2, sum;
-    int* ptr1, * ptr2;
+  
+    char character = 'C';
+    int integer = 1;
+    float real = 10.4f;
+    long long biginteger = 989898989ll;
 
-    ptr1 = &num1; // ptr1 stores the address of num1
-    ptr2 = &num2; // ptr2 stores the address of num2
-
-    printf("Enter any two numbers: ");
-    scanf_s("%d%d", ptr1, ptr2);
-
-    sum = ptr1 +ptr2;
-
-    printf("Sum = %d", sum);
+    printf("Value of character = %c, Address of character = %u\n", character, &character);
+    printf("Value of integer = %d, Address of integer = %u\n", integer, &integer);
+    printf("Value of real = %f, Address of real = %u\n", real, &real);
+    printf("Value of biginteger = %lld, Address of biginteger = %u", biginteger, &biginteger);
 
     return 0;
 }
